@@ -15,14 +15,14 @@ export default function Model({ children, open, closemodel }) {
         }
     }, [open])
     return createPortal(
-       open&&(<dialog className='border  border-0  rounded-4 w-20' ref={ref}>
-            <div>
+       <dialog className='border  border-0  rounded-4 w-20' ref={ref}>
+            {open&&(<div>
                 {children}
                 <button className='border  border-0 position-absolute top-0 end-0 mt-2 me-2 btn  rounded-pill' onClick={closemodel}>
                 <img alt="share" src={x2} />
                 </button>           
-             </div> 
-        </dialog>),
+             </div> )}
+        </dialog>,
         document.getElementById("model")
     )
 }

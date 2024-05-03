@@ -1,7 +1,6 @@
 import logo from '../assets/logo.svg'
 import down from '../assets/downA.svg'
 import Model from './model'
-import LoginPage from './loginpage'
 import { useState } from 'react'
 import SignUp from './SignUp'
 export default function Nav() {
