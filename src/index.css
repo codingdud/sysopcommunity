@@ -1,0 +1,19 @@
+.nav-link.active {
+  text-decoration: underline;
+  color: #000000; /* Dark black color */
+}
+.nav-link:not(.active) {
+  color: #6c757d; /* Grey color for inactive links */
+}
+
+@media (max-width: 768px) {
+  .img-fluid {
+    height: 40vh !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-fluid {
+    height: 30vh !important;
+  }
+}
